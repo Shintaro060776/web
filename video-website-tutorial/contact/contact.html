@@ -29,7 +29,21 @@
                     networking systems, and the vast expanse of cloud computing. I'm committed to pushing the boundaries
                     of
                     technology to create impactful solutions< </p>
-                        <a href="#">More Detail</a>
+                        <a href="#" id="showDetail">More Detail</a>
+                        <ul>
+                            <div class="social-icons" id="socialIcons">
+                                <li>
+                                    <a href="#"><img src="../images/facebook.png"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/eden198611"><img src="../images/twitter.png"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/shintaro20090317_2/"><img
+                                            src="../images/instagram.png"></a>
+                                </li>
+                            </div>
+                        </ul>
             </div>
         </div>
 
@@ -38,7 +52,7 @@
     <div class="menu">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="http://localhost:3000/">Blog</a></li>
             <li><a href="">Support</a></li>
         </ul>
     </div>
@@ -59,6 +73,16 @@
         menuToggle.addEventListener("click", function () {
             menuToggle.classList.toggle("active");
             showcase.classList.toggle("active");
+        });
+
+        document.getElementById("showDetail").addEventListener("click", function (e) {
+            e.preventDefault();
+            const socialIcons = document.getElementById("socialIcons");
+            if (socialIcons.style.display === "none" || !socialIcons.style.display) {
+                socialIcons.style.display = "block";
+            } else {
+                socialIcons.style.display = "none";
+            }
         });
     </script>
 </body>

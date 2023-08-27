@@ -124,3 +124,9 @@ body::after {
     background-position: center;
     cursor: pointer;
 }
+
+.social-icons {
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+}
